@@ -104,10 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
     this.setAttribute("src", cardArray[cardId].img);
     if (cardsChosen.length === 2) {
       setTimeout(checkForMatch, 500);
-    } else {
-      cards[optionOneId].setAttribute("src", "images/blank.png");
-      cards[optionTwoId].setAttribute("src", "images/blank.png");
-      alert("Sorry, try again");
     }
   }
 });
